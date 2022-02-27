@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="loader">
+        <div id="wrapperload">
+            <div class="elem">
+                <img src="./imgs/name.jpeg" alt="">
+            </div>
+            <div class="elem">
+                <h3>UI/UX Designer</h3>
+            </div>
+            <div class="elem">
+                <h3>loves to help brands.</h3>
+            </div>
+            <div class="elem">
+                <img src="./imgs/name.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="bg">
+        <nav>
+            <img class="navitem" src="./imgs/logo.jpeg" alt="">
+            <div id="nav">
+                <a class="navitem" href="#loader">Home</a>
+                <a class="navitem" href="#profiles">Contact</a>
+                <i class="navitem ri-search-line"></i>
+                <i id="menu" class="navitem ri-menu-2-line"></i>
+            </div>
+        </nav>
+        <div id="sections">
+            
+            <div id="left">
+                <div id="smline"></div>
+                <h4 class="leftitem">Hello, I am 👋</h4>
+                <img class="name-img" src="./imgs/name.jpeg" alt="">
+                <h5 class="leftitem">a designer from <span id="lblue">chennai.</span></h5>
+                <div class="leftitem" id="playbtn">
+                    <img src="./imgs/playButton.png" alt="">
+                    <h5><a class="navitem" href="https://github.com/Trisha3620">SEE MY GIT WORKS</a></span></h5>
+                </div>
+                
+            </div>
+            <div id="right">
+                <img src="./imgs/mainImage.png" alt="">
+            </div>
+        </div>
+    </div>
+    <section id="profiles" aria-label="social links">
+        <div class="social-links">
+            <h1>Contact me<h1>
+                <div class="conatct-me" >
+                    <form  class="formm" action="contact_process.php"   method="post" id="conatctform" novalidate="novalidate"  >
+                        <div class="con" >
+                            <div  class="form" >
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name" >
+
+                            </div>
+                            <div  class="form" >
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Enter Your email" >
+
+                            </div>
+                            <div  class="form" >
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter subject" >
+
+                            </div>
+                            <div >
+                                <div  class="form" >
+                                    <textarea type="text" class="form-control" id="Message" name="Message" cols="30" rows="10" placeholder="Enter Message" ></textarea>
+                                        
+    
+                                </div>
+                                
+                            </div>
+                            <div class=" form-submit" >
+                                <button type="submit" class="submit" > Send Message </button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                    <ul>
+                        <a id="profile-link" href="https://www.linkedin.com/in/trisha-bakthavathchalam-a87a23232" target="_blank">
+                            <li>
+                                <i class="fa fa-linkedin-square"></i>LinkedIn
+                            </li>
+                        </a>
+                        <a id="profile-link" href="https://github.com/Trisha3620" target="_blank">
+                            <li>
+                                <i class="fa fa-github"></i>GitHub
+                            </li>
+                        </a>
+                        <a id="profile-link" href="trishacse2020@gmail.com" target="_blank">
+                            <li>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>E-mail
+                            </li>
+                        </a>
+                    </ul>
+        </div>
+    </section>
+
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="script.js"></script> 
+
+    <script>
+        var menu = document.querySelector('#menu');
+        var bg = document.querySelector('#bg');
+
+        menu.addEventListener('click', function(){
+            bg.style.transform = 'scale(.8)';
+            bg.style.borderRadius = '10px';
+            bg.style.boxShadow = '0 150px 45px -100px rgba(0,0,0,0.2)';
+        })
+    </script>
+</body>
+</html>
